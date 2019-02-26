@@ -57,7 +57,7 @@
 					} else {
 						wrappedCallback();
 					}
-				}, 30 );
+				}, 300 );
 			}, null, null, -1 );
 
 			// pasteFiles is defined in clipboard plugin helper.
