@@ -264,11 +264,11 @@
 					}, null, null, 9999 );
 				} else {
 					// Editor is already during creation process, bind our code to the event.
-					editor.once( 'instanceReady', function() {
+					editor.once( 'instanceReady', function integrateWithjQuery() {
 						setTimeout( function() {
 							// Delay bit more if editor is still not ready.
 							if ( !editor.element ) {
-								setTimeout( arguments.callee, 100 );
+								setTimeout( integrateWithjQuery, 100 );
 								return;
 							}
 
